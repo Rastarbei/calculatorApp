@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/buttonSum"
@@ -157,10 +157,24 @@
         app:layout_constraintEnd_toStartOf="@+id/buttonEqual"
         app:layout_constraintStart_toEndOf="@+id/buttonMultiply" />
 
-    <com.google.android.material.textfield.TextInputEditText
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="407dp"
+        android:layout_height="224dp"
+        android:text="abc"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonClear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Input number"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="6dp" />
+        android:text="Clear"
+        app:layout_constraintBottom_toTopOf="@+id/buttondiv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
